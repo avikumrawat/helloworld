@@ -1,12 +1,9 @@
 const text = "Hello, world!";
 let i = 0;
-let output = "";
 
 function typeWriter() {
   if (i < text.length) {
-    output += text[i];
-    console.clear();
-    console.log(output);
+    console.log(text[i]);
     i++;
     setTimeout(typeWriter, 100);
   }
